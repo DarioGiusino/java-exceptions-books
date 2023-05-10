@@ -20,7 +20,7 @@ public class Book {
 		return title;
 	}
 	public void setTitle(String title) throws Exception {
-		if(title.length() < 0) {
+		if(title.length() <= 0) {
 			throw new Exception("Il titolo deve contenere almeno un carattere!");
 		}
 		
@@ -44,7 +44,7 @@ public class Book {
 		return author;
 	}
 	public void setAuthor(String author) throws Exception {
-		if(author.length() < 0) {
+		if(author.length() <= 0) {
 			throw new Exception("L'autore deve contenere almeno un carattere!");
 		}
 		
@@ -56,7 +56,7 @@ public class Book {
 		return editor;
 	}
 	public void setEditor(String editor) throws Exception {
-		if(editor.length() < 0) {
+		if(editor.length() <= 0) {
 			throw new Exception("L'editore deve contenere almeno un carattere!");
 		}
 		
