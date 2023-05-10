@@ -63,7 +63,12 @@ public class Book {
 		this.editor = editor;
 	}
 	
-	
-	
-	
+	@Override
+	public String toString() {
+		
+		return "[Book] " + getTitle()
+				+ "\nNumero Pagine: " + getPages()
+				+ "\nAutore: " + getAuthor()
+				+ "\nEditore: " + getEditor();
+	}
 }
